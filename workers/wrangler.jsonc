@@ -1,0 +1,17 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "interstellar",
+  "main": "../src/server.js",
+  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_date": "2026-09-27",
+
+  "assets": {
+    "directory": "../dist",
+    "binding": "ASSETS",
+    "html_handling": "none",
+    "not_found_handling": "none",
+    "run_worker_first": true
+  },
+
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["WispServer"] }, { "tag": "v2", "deleted_classes": ["WispServer"] }]
+}
