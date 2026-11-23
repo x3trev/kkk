@@ -33,8 +33,8 @@ importers:
         specifier: file:vendor/mercuryworkshop-epoxy-transport-2.1.28-epx.e5f13bb.tgz
         version: file:vendor/mercuryworkshop-epoxy-transport-2.1.28-epx.e5f13bb.tgz
       '@mercuryworkshop/libcurl-transport':
-        specifier: ^1.5.2
-        version: 1.5.2
+        specifier: ^2.0.6
+        version: 2.0.6
       '@mercuryworkshop/wisp-js':
         specifier: ^0.4.1
         version: 0.4.1
@@ -549,6 +549,7 @@ packages:
 
   '@mercuryworkshop/bare-mux@2.1.9':
     resolution: {integrity: sha512-fiOqWm3VP0Bl8T+0l+qnb7ab9zO+PpKVbtJvOnMsefUv6kWIaoDtqyr9hd/t4gA8oBwgtyZVqIwO2J9nKY9ylw==}
+    deprecated: this is deprecated and will no longer be recieving updates, please use proxy-transports instead
 
   '@mercuryworkshop/epoxy-tls@file:vendor/mercuryworkshop-epoxy-tls-2.1.19-1-e5f13bb.tgz':
     resolution: {integrity: sha512-+pc93YyY4yrW2l9cstzSz2LLuVDon6p1aUvjUr8oheS2ydRdN+tRF+rjKUVoGdBg/GzUVSQVoqzEAdEX8To0lQ==, tarball: file:vendor/mercuryworkshop-epoxy-tls-2.1.19-1-e5f13bb.tgz}
@@ -558,8 +559,8 @@ packages:
     resolution: {integrity: sha512-RAVwFzWnNpbkfxtSC1Z/h2evFjBuYqwxB/63S836jlRbQEkvxZd9MuTcNdiTtUWZlOo1yURVBPeiuzkoAUBCog==, tarball: file:vendor/mercuryworkshop-epoxy-transport-2.1.28-epx.e5f13bb.tgz}
     version: 2.1.28-epx.e5f13bb
 
-  '@mercuryworkshop/libcurl-transport@1.5.2':
-    resolution: {integrity: sha512-E0tD/3W6HE99ypc7CStpchU6xs+TP5u2vms/9q/46BShblB2pbRCNeXHBlvXqdz97nh2Xh4A68DryDt5CM29Dg==}
+  '@mercuryworkshop/libcurl-transport@2.0.6':
+    resolution: {integrity: sha512-QBCFBiTfNd9k3wXsW3/thfMJJrKrfaZFKYRncGv6gGU+bfMWdyy7rOktJ9WG6sElKpYbrqRSm+XVAz7I5OCsKg==}
 
   '@mercuryworkshop/wisp-js@0.4.1':
     resolution: {integrity: sha512-104LwiXiuhti/e32gmv0Da0u0yuLFDHX8JawCzleTPWJ5t5qTX4EYi4E7/ucbjBPN9wwVPWHE5g5yGqzl/NzQA==}
@@ -583,6 +584,7 @@ packages:
 
   '@titaniumnetwork-dev/ultraviolet@3.2.10':
     resolution: {integrity: sha512-Sf0Leb+NMEwFA8EQxCLW/wJW6TNR/EITBPKHadiq4DNOEbgXJdmIW8PKmsNkyOvAIN6o2peE86S6qxQt6ft1Ew==}
+    deprecated: this project is deprecated and has been superceeded by @mercuryworkshop/scramjet, it is recommended you switch to this instead
 
   '@types/minimatch@3.0.5':
     resolution: {integrity: sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==}
@@ -1095,8 +1097,8 @@ packages:
     resolution: {integrity: sha512-0OO4y2iOHix2W6ujICbKIaEQXvFQHue65vUG3pb5EUomzPI90z9hsA1VsO/dbIIpC53J8gxM9Q4Oho0jrCM/yA==}
     engines: {node: '>= 0.8.0'}
 
-  libcurl.js@0.7.4:
-    resolution: {integrity: sha512-UpvVirvATP7fD0t4rnsxVRuUpPVIo2QvWj4+5JrMsd1KSEvYkON36+COOPAl88hPlGJddk+DfZRvyF7KG7YcSA==}
+  libcurl.js@0.7.5:
+    resolution: {integrity: sha512-O7OizjbbSYvAGFkbat3gwih2PXpI4jKTk25SD2tPJnMsmKTU5UIK7x8exbD9DCBFPkL3FEcqYJAvqlELESBmYA==}
 
   libphonenumber-js@1.12.42:
     resolution: {integrity: sha512-oKQFPTibqQwZZkChCDVMFVJXMZdyJNqDWZWYNn8BgyAaK/6yFJEowxCY0RVFirRyWP63hMRuKlkSEd9qlvbWXg==}
@@ -1808,9 +1810,9 @@ snapshots:
     dependencies:
       '@mercuryworkshop/epoxy-tls': file:vendor/mercuryworkshop-epoxy-tls-2.1.19-1-e5f13bb.tgz
 
-  '@mercuryworkshop/libcurl-transport@1.5.2':
+  '@mercuryworkshop/libcurl-transport@2.0.6':
     dependencies:
-      libcurl.js: 0.7.4
+      libcurl.js: 0.7.5
 
   '@mercuryworkshop/wisp-js@0.4.1':
     dependencies:
@@ -2415,7 +2417,7 @@ snapshots:
       prelude-ls: 1.1.2
       type-check: 0.3.2
 
-  libcurl.js@0.7.4: {}
+  libcurl.js@0.7.5: {}
 
   libphonenumber-js@1.12.42: {}
 
